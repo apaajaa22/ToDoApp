@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
   header: {padding: 40},
   page: {
     flex: 1,
-    backgroundColor: '#97B4FF',
+    backgroundColor: '#3450A1',
   },
   titleCategory: {paddingHorizontal: 40},
   category: {color: 'white'},
