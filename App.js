@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
   },
   titleCategory: {paddingHorizontal: 40},
   category: {color: 'white'},
-  title: {color: '#FFFFFF', fontSize: 24},
+  title: {color: '#FFFFFF', fontSize: 32, fontWeight: 'bold'},
   subTitle: {color: '#FFFFFF', fontSize: 14, marginVertical: 30},
   addButton: {position: 'absolute', bottom: 40, right: 40},
   containerCategory: {
