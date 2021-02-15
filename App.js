@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {
+  ImageBackground,
   ScrollView,
   StyleSheet,
   Text,
@@ -9,6 +10,11 @@ import {
   View,
 } from 'react-native';
 import {Submit} from './assets';
+
+const image = {
+  uri:
+    'https://images.unsplash.com/photo-1518891130017-d5a42dc99521?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80',
+};
 
 const ItemList = ({taskTitle, onDelete}) => {
   return (
@@ -64,7 +70,7 @@ const App = ({taskTitle}) => {
   };
 
   return (
-    <View style={styles.page}>
+    <ImageBackground source={image} style={styles.page}>
       <Text style={styles.title}>Hai mau menulis catatan apa hari ini ?</Text>
       <View style={styles.wrapper}>
         <Text style={styles.subtitle}>Task</Text>
@@ -91,17 +97,23 @@ const App = ({taskTitle}) => {
           <Submit />
         </TouchableOpacity>
       </View>
-    </View>
+    </ImageBackground>
   );
 };
 
 export default App;
 
 const styles = StyleSheet.create({
-  page: {flex: 1, backgroundColor: '#34e7e4', padding: 25},
-  title: {color: '#3c40c6', fontSize: 24, fontWeight: 'bold', maxWidth: '70%'},
+  page: {
+    flex: 1,
+    backgroundColor: '#34e7e4',
+    padding: 25,
+    maxWidth: '100%',
+    maxHeight: '100%',
+  },
+  title: {color: 'white', fontSize: 24, fontWeight: 'bold', maxWidth: '70%'},
   wrapper: {flex: 1, marginTop: 20},
-  subtitle: {color: '#3c40c6', fontSize: 18, fontWeight: '500'},
+  subtitle: {color: 'white', fontSize: 18, fontWeight: '500'},
   container: {
     backgroundColor: '#575fcf',
     borderRadius: 10,
