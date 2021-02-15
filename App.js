@@ -116,7 +116,7 @@ const styles = StyleSheet.create({
   },
   containerText: {flex: 1},
 
-  delete: {fontSize: 20, fontWeight: 'bold', color: '#b33939'},
+  delete: {fontSize: 20, fontWeight: 'bold', color: '#ff7675'},
   itemList: {fontSize: 16, color: '#f7f1e3', fontWeight: 'bold'},
   textInput: {
     borderRadius: 10,
